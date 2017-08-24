@@ -123,10 +123,10 @@ ongoing usage.
 Clone this repository and ensure it is the current directory. Execute
 the `download.py` script, passing it the name of the SQS queue, the start
 time, the end time and a comma-separated string containing one or more of
-'temperature', 'pressure' or 'humidity' to begin polling the SQS queue. No
-events are being delivered to the SQS queue yet so no files will be downloaded.
+'temperature', 'pressure' or 'humidity' to begin polling the SQS queue.
 
-Note that the diagnostic names given here are names at their simplest - the
+Note that the start and end times are the forecast times (i.e. T+ times), in
+hours. The diagnostic names given here are names at their simplest - the
 corresponding metadata names are substituted within the code. All strings
 other than 'temperature', 'pressure' and 'humidity' are ignored. The string
 of diagnostic names cannot include whitespaces.
